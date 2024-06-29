@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>if文</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
+  $(function(){
+    // ここに処理を記述
+  });
+  </script>
+</head>
+<body>
+  <input type="text" id="value" >
+  <input type="button" id="button" value="ボタン" onclick="ck()">
+  <div id="box">
+  </div><!-- button -->
+
+  <script>
+    
+    function ck(){
+
+    let getValue = document.getElementById("value").value
+    let getBox = document.getElementById("box")
+
+    if (getValue == "1"){
+      getBox.classList.add("red")
+      } else if (getValue == "2"){
+      getBox.classList.add("greenYellow")
+      } else if (getValue == "3"){
+        getBox.classList.add("blue")
+      } else window.alert("この値に対する色を設定していません")
+
+    }
+
+  </script>
+</body>
+</html>

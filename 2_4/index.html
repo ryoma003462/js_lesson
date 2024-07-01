@@ -7,6 +7,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
   $(function(){
     // ここに処理を記述
+    document.getElementById("button").addEventListener("click",()=>{
+      window.alert(document.getElementById("value").value)
+    })
   });
   </script>
 </head>
@@ -14,12 +17,7 @@
   <input type="text" id="value">
   <input type="button" id="button" value="ボタン">
 
-  <script>
-
-    document.getElementById("button").addEventListener("click",()=>{
-      window.alert(document.getElementById("value").value)
-    })
-    
+  <script>  
   </script>
 </body>
 </html>

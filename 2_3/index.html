@@ -7,6 +7,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
   $(function(){
     // ここに処理を記述
+    const getClass = document.getElementById("button")
+
+    getClass.addEventListener("click",()=>{
+      getClass.classList.add("move")
+    })
   });
   </script>
 </head>
@@ -16,13 +21,6 @@
   </div><!-- button -->
 
   <script>
-
-    const getClass = document.getElementById("button")
-
-    getClass.addEventListener("click",()=>{
-      getClass.classList.add("move")
-    })
-    
-  </script>
+   </script>
 </body>
 </html>
